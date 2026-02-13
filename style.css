@@ -13,16 +13,30 @@ body {
 
 .container {
     width: 300px;
-    height: 400px;
+    height: 350px;
     background-color: grey;
 }
 
 .screen {
     display: block;
     text-align: right;
+    box-sizing: border-box;
     padding: 15px 25px;
     font-size: 20px;
     font-family: 'Courier New', Courier, sans-serif;
     margin: 10px;
     background-color: rgb(127, 165, 50);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+button {
+    flex-basis: 60px;
+    height: 40px;
 }

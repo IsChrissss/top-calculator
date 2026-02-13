@@ -26,5 +26,26 @@ const container = document.querySelector(".container")
 
 const screen = document.createElement("span")
 screen.classList.add("screen")
-screen.textContent = "Hello";
+screen.textContent = "0"
 container.appendChild(screen)
+
+const buttons = document.createElement("div")
+buttons.classList.add("buttons")
+container.appendChild(buttons)
+
+const buttonValues = [
+    '7', '8', '9', '/',
+    '4', '5', '6', '*',
+    '1', '2', '3', '-',
+    '0', '.', '=', '+',
+]
+
+buttonValues.forEach(value => {
+    const button = document.createElement("button")
+    button.textContent = value
+    buttons.appendChild(button)
+
+    button.addEventListener("click", () => {
+        screen.textContent += value;
+    })
+})
