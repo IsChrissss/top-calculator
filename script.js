@@ -21,3 +21,10 @@ const operate = (firstNum, operator, secondNum) => {
             return mathUtils.divide(firstNum, secondNum)
     }
 }
+
+const container = document.querySelector(".container")
+
+const screen = document.createElement("span")
+screen.classList.add("screen")
+screen.textContent = "Hello";
+container.appendChild(screen)
