@@ -49,3 +49,14 @@ buttonValues.forEach(value => {
         screen.textContent += value;
     })
 })
+
+const clearButton = document.createElement("button")
+clearButton.textContent = "C"
+buttons.appendChild(clearButton)
+
+clearButton.addEventListener("click", () => {
+    screen.textContent = "0";
+    firstNum = undefined;
+    secondNum = undefined;
+    operator = '';
+})
